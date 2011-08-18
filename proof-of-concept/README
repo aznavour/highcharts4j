@@ -1,0 +1,18 @@
+This is a proof of concert implementation for a server side only highchart rendering engine using rhino, envjs, jquery and batik.
+
+
+Hacks/Patches/Modificaton:
+
+the modified
+
+- modified hasSVG in highcharts.src.js, is Envjs aware now
+- provided dummy function for missing getBBox. 
+- modified getSVG in exporting.src.js, innerHTML was undefined in the container
+- modified buildText in highcharts.src.js, as getComputedStyle seems to return undefined (around line 2304)
+
+
+Issues:
+
+- all of the above changes do prevent upgrading of highcharts
+- the fake getBBox doesnt work with well with arbitrary charts
+- The y Axis tick labels do overlap the axis label and legel (see options2.png)
