@@ -15,4 +15,4 @@ Issues:
 
 - all of the above changes do prevent upgrading of highcharts
 - the fake getBBox doesnt work with well with arbitrary charts
-- The y Axis tick labels do overlap the axis label and legel (see options2.png)
+- The y Axis tick labels do overlap the axis label and legel (see options3.png)

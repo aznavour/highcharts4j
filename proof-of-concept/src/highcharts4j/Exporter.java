@@ -21,6 +21,7 @@ public class Exporter {
 	public static void main(String[] args) throws TranscoderException, IOException{
 		renderTestOptions(1);
 		renderTestOptions(2);
+		renderTestOptions(3);
 	}
 	
 	public static void renderTestOptions(int number) throws IOException, TranscoderException{
